@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://labago.github.io/gridflowdesign/sitemap.xml
