@@ -3,138 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GridFlow Design — Free & Premium Spreadsheet Templates</title>
-<meta name="description" content="Professional Excel & Google Sheets templates for budgeting, expense tracking, debt payoff, habit tracking, meal planning, and more. Instant download.">
-<meta name="keywords" content="budget spreadsheet template, expense tracker excel, debt payoff calculator, habit tracker spreadsheet, meal planner template, invoice template excel, wedding budget planner, savings tracker">
-<link rel="canonical" href="https://labago.github.io/gridflowdesign">
+<title>GridFlow Design — Professional Spreadsheet Templates for Excel & Google Sheets</title>
+<meta name="description" content="Download professional budget trackers, expense trackers, habit trackers, and more. Instant digital download. Works in Excel and Google Sheets.">
+<meta name="keywords" content="budget tracker spreadsheet, expense tracker template, habit tracker excel, wedding budget planner, debt payoff tracker, savings goal tracker, invoice template excel, meal planner spreadsheet, project tracker template, google sheets template">
+<link rel="canonical" href="https://gridflowdesign.vercel.app/">
+<meta property="og:title" content="GridFlow Design — Professional Spreadsheet Templates">
+<meta property="og:description" content="Budget trackers, expense trackers, habit trackers & more. Instant download. Excel & Google Sheets compatible.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gridflowdesign.vercel.app/">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#1a1a2e;line-height:1.6;background:#fafafa}
-.hero{background:linear-gradient(135deg,#0f3460 0%,#16213e 100%);color:#fff;padding:60px 20px;text-align:center}
-.hero h1{font-size:2.2rem;margin-bottom:12px;font-weight:700}
-.hero p{font-size:1.1rem;opacity:.9;max-width:600px;margin:0 auto 24px}
-.hero .cta{display:inline-block;background:#e94560;color:#fff;padding:14px 32px;border-radius:8px;text-decoration:none;font-weight:600;font-size:1.05rem;transition:transform .2s}
-.hero .cta:hover{transform:scale(1.05)}
-.section{max-width:1000px;margin:0 auto;padding:40px 20px}
-.section h2{font-size:1.6rem;margin-bottom:24px;text-align:center;color:#16213e}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
-.card{background:#fff;border-radius:12px;padding:24px;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .2s}
-.card:hover{transform:translateY(-4px)}
-.card h3{font-size:1.15rem;margin-bottom:8px;color:#0f3460}
-.card p{font-size:.95rem;color:#555;margin-bottom:16px}
-.card .price{font-weight:700;color:#e94560;font-size:1.1rem}
-.card a{display:inline-block;margin-top:12px;background:#0f3460;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-size:.9rem}
-.card a:hover{background:#16213e}
-.benefits{background:#fff;padding:40px 20px}
-.benefits ul{max-width:700px;margin:0 auto;list-style:none}
-.benefits li{padding:12px 0;border-bottom:1px solid #eee;font-size:1rem}
-.benefits li:before{content:"✓ ";color:#e94560;font-weight:700}
-footer{text-align:center;padding:30px;color:#888;font-size:.85rem}
-@media(max-width:600px){.hero h1{font-size:1.6rem}.grid{grid-template-columns:1fr}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#0a0a0a;color:#e0e0e0;line-height:1.6}
+a{color:#4fc3f7;text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{text-align:center;padding:60px 20px 40px;background:linear-gradient(135deg,#0d1117 0%,#161b22 100%)}
+header h1{font-size:2.4rem;color:#fff;margin-bottom:10px}
+header .tagline{font-size:1.1rem;color:#8b949e;max-width:600px;margin:0 auto}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;padding:40px 20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:12px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,0,0,.4)}
+.card-body{padding:20px}
+.card h2{font-size:1.15rem;color:#fff;margin-bottom:8px}
+.card p{font-size:.9rem;color:#8b949e;margin-bottom:14px}
+.card .price{font-size:1.3rem;font-weight:700;color:#4fc3f7}
+.card .btn{display:inline-block;margin-top:12px;padding:10px 24px;background:#238636;color:#fff;border-radius:6px;font-weight:600;font-size:.9rem;transition:background .2s}
+.card .btn:hover{background:#2ea043;text-decoration:none}
+.features{padding:40px 20px;text-align:center}
+.features h2{font-size:1.6rem;color:#fff;margin-bottom:20px}
+.feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.feat{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:20px}
+.feat h3{color:#4fc3f7;margin-bottom:6px;font-size:1rem}
+.feat p{font-size:.85rem;color:#8b949e}
+footer{text-align:center;padding:30px;color:#484f58;font-size:.8rem;border-top:1px solid #21262d;margin-top:40px}
+.badge{display:inline-block;background:#1f6feb;color:#fff;font-size:.7rem;padding:2px 8px;border-radius:4px;margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+@media(max-width:600px){header h1{font-size:1.6rem}.products{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"GridFlow Design","url":"https://labago.github.io/gridflowdesign","description":"Professional spreadsheet templates for personal finance, productivity, and small business."}
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "GridFlow Design",
+  "url": "https://gridflowdesign.vercel.app",
+  "description": "Professional spreadsheet templates for personal finance, productivity, and business.",
+  "sameAs": ["https://gridflow6.gumroad.com"]
+}
 </script>
 </head>
 <body>
-<div class="hero">
-<h1>Spreadsheet Templates That Actually Work</h1>
-<p>Professional Excel templates for budgeting, expense tracking, debt payoff, and more. Ready to use in seconds.</p>
-<a href="https://gridflowtools.gumroad.com" class="cta">Browse All Templates →</a>
+<header>
+<div class="container">
+<h1>⚡ GridFlow Design</h1>
+<p class="tagline">Professional spreadsheet templates for budgeting, tracking, and organizing your life. Instant download. Works in Excel &amp; Google Sheets.</p>
 </div>
+</header>
 
-<div class="section">
-<h2>Our Templates</h2>
-<div class="grid">
+<section class="products container">
 
 <div class="card">
-<h3>Monthly Budget Tracker</h3>
-<p>Track income, expenses, and savings goals with automatic calculations and visual dashboards. Categorize spending and stay on budget effortlessly.</p>
-<span class="price">$5.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/monthly-budget-tracker">Get Template</a>
+<div class="card-body">
+<span class="badge">Best Seller</span>
+<h2>Monthly Budget Tracker</h2>
+<p>Track income, expenses &amp; savings across 13 categories. Auto-calculating dashboard with category breakdowns, income tracking &amp; expense log with dropdown menus.</p>
+<div class="price">$5.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/lhcbpp" target="_blank" rel="noopener">Get Template →</a>
 </div>
-
-<div class="card">
-<h3>Debt Payoff Tracker</h3>
-<p>Snowball or avalanche method — track multiple debts, see your payoff timeline, and watch balances shrink with every payment.</p>
-<span class="price">$5.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/debt-payoff-tracker">Get Template</a>
 </div>
 
 <div class="card">
-<h3>Savings Goal Tracker</h3>
-<p>Set savings targets with deadlines, track contributions, and visualize progress. Perfect for emergency funds, vacations, or big purchases.</p>
-<span class="price">$4.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/savings-goal-tracker">Get Template</a>
+<div class="card-body">
+<span class="badge">Popular</span>
+<h2>Debt Payoff Tracker</h2>
+<p>Crush your debt with snowball or avalanche strategies. Track multiple debts, minimum payments, extra payments &amp; see your debt-free date approach.</p>
+<div class="price">$5.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/vlmzrj" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Daily Expense Tracker</h3>
-<p>Log every purchase, auto-categorize spending, and see daily/weekly/monthly totals. Know exactly where your money goes.</p>
-<span class="price">$4.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/daily-expense-tracker">Get Template</a>
+<div class="card-body">
+<h2>Savings Goal Tracker</h2>
+<p>Track multiple savings goals simultaneously. Emergency fund, vacation, down payment — see your progress with auto-calculated completion percentages.</p>
+<div class="price">$4.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/ifjmy" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Wedding Budget Planner</h3>
-<p>Plan your dream wedding without the financial stress. Track vendors, deposits, payments, and stay within budget across every category.</p>
-<span class="price">$7.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/wedding-budget-planner">Get Template</a>
+<div class="card-body">
+<h2>Daily Expense Tracker</h2>
+<p>Log every purchase with categories &amp; payment methods. Auto-summing daily, weekly &amp; monthly totals. See exactly where your money goes.</p>
+<div class="price">$4.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/zhfvrc" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Small Business Expense Tracker</h3>
-<p>Separate business expenses by category, track tax-deductible items, and generate simple reports. Perfect for freelancers and side hustles.</p>
-<span class="price">$6.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/small-business-expense-tracker">Get Template</a>
+<div class="card-body">
+<h2>Monthly Habit Tracker</h2>
+<p>Build better habits with visual tracking. 31-day grid for up to 15 habits with completion rates &amp; streak tracking. Color-coded for quick scanning.</p>
+<div class="price">$3.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/jnvav" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Habit Tracker</h3>
-<p>Build better habits with daily/weekly tracking, streak counts, and completion rates. Visualize consistency and stay motivated.</p>
-<span class="price">$3.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/habit-tracker">Get Template</a>
+<div class="card-body">
+<span class="badge">Wedding</span>
+<h2>Wedding Budget Planner</h2>
+<p>Plan your dream wedding without the financial stress. Track vendor costs, deposits, payments &amp; budget across 12+ wedding categories.</p>
+<div class="price">$7.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/nfjfqc" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Project & Task Tracker</h3>
-<p>Manage projects with task lists, deadlines, priority levels, and status tracking. Kanban-style workflow in a spreadsheet.</p>
-<span class="price">$5.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/project-task-tracker">Get Template</a>
+<div class="card-body">
+<span class="badge">Business</span>
+<h2>Small Business Expense Tracker</h2>
+<p>Professional expense tracking with tax categories, vendor management &amp; monthly summaries. Perfect for freelancers &amp; small business owners.</p>
+<div class="price">$6.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/mibqg" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Meal Planner & Grocery List</h3>
-<p>Plan weekly meals, auto-generate grocery lists, and track nutrition. Save time and money on food shopping.</p>
-<span class="price">$3.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/meal-planner">Get Template</a>
+<div class="card-body">
+<h2>Project &amp; Task Tracker</h2>
+<p>Manage projects with task lists, status tracking, priority levels &amp; deadlines. Kanban-style overview with auto-calculated progress.</p>
+<div class="price">$5.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/tymfm" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
 <div class="card">
-<h3>Invoice Template</h3>
-<p>Professional invoice with auto-calculations, tax fields, and clean formatting. Just fill in your details and send.</p>
-<span class="price">$3.99</span>
-<br><a href="https://gridflowtools.gumroad.com/l/invoice-template">Get Template</a>
+<div class="card-body">
+<h2>Weekly Meal Planner &amp; Grocery List</h2>
+<p>Plan meals for the week with auto-generated grocery lists. Breakfast, lunch, dinner &amp; snacks organized by day with shopping categories.</p>
+<div class="price">$3.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/sndhql" target="_blank" rel="noopener">Get Template →</a>
+</div>
 </div>
 
+<div class="card">
+<div class="card-body">
+<h2>Professional Invoice Template</h2>
+<p>Create clean, professional invoices in seconds. Auto-calculating totals, tax, line items &amp; payment terms. Ready to send to clients.</p>
+<div class="price">$3.99</div>
+<a class="btn" href="https://gridflow6.gumroad.com/l/ugryq" target="_blank" rel="noopener">Get Template →</a>
 </div>
 </div>
 
-<div class="benefits">
-<h2 style="text-align:center;font-size:1.4rem;margin-bottom:20px;color:#16213e">Why GridFlow Templates?</h2>
-<ul>
-<li>Works in Excel AND Google Sheets — no special software needed</li>
-<li>Pre-built formulas — just enter your data, everything calculates automatically</li>
-<li>Professional styling with clean, modern design</li>
-<li>Dropdown menus for easy data entry</li>
-<li>Instant digital download — start using in under 60 seconds</li>
-<li>Sample data included so you can see how it works before customizing</li>
-<li>Mobile-friendly — edit on your phone via Google Sheets app</li>
-</ul>
+</section>
+
+<section class="features">
+<h2>Why GridFlow Templates?</h2>
+<div class="feat-grid">
+<div class="feat">
+<h3>📊 Auto-Calculating Formulas</h3>
+<p>Every template has built-in formulas. Just enter your data — totals, percentages, and summaries update automatically.</p>
 </div>
+<div class="feat">
+<h3>🔄 Excel + Google Sheets</h3>
+<p>All templates are .xlsx files that work perfectly in Microsoft Excel and Google Sheets. No special software needed.</p>
+</div>
+<div class="feat">
+<h3>⚡ Instant Download</h3>
+<p>Purchase and download immediately. No waiting, no shipping. Start using your template in under 60 seconds.</p>
+</div>
+<div class="feat">
+<h3>🎨 Professional Design</h3>
+<p>Clean layouts with color-coded sections, dropdown menus, and sample data so you know exactly how to use each template.</p>
+</div>
+</div>
+</section>
 
 <footer>
-&copy; 2026 GridFlow Design. All rights reserved.
+<p>&copy; 2026 GridFlow Design. All rights reserved.</p>
+<p style="margin-top:8px"><a href="https://gridflow6.gumroad.com">Visit our Gumroad store</a></p>
 </footer>
 </body>
 </html>
